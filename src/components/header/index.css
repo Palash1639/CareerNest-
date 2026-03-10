@@ -1,0 +1,68 @@
+/* Header / Navbar styling */
+
+nav {
+  backdrop-filter: blur(16px);
+  background: linear-gradient(
+    90deg,
+    rgba(15, 23, 42, 0.98),
+    rgba(15, 23, 42, 0.94)
+  ) !important;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.3);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.9);
+}
+
+nav a {
+  color: #e5e7eb !important;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+nav a.text-danger {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #f97316 !important;
+}
+
+.mylist {
+  margin-right: 18px;
+}
+
+.mylist a {
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.mylist a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #6366f1, #22d3ee);
+  border-radius: 999px;
+  transition: width 0.2s ease;
+}
+
+.mylist a:hover::after {
+  width: 100%;
+}
+
+nav .btn-primary {
+  padding-inline: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.75rem;
+  }
+
+  nav ul {
+    padding-left: 0 !important;
+    gap: 0.75rem;
+  }
+}

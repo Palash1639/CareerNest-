@@ -1,0 +1,24 @@
+.not-cont {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #334155;
+  /* Dark slate text for light background */
+}
+
+.not-cont h1 {
+  font-size: 1.8rem;
+  max-width: 420px;
+  line-height: 1.5;
+  color: #1e293b;
+}
+
+.not-cont p {
+  color: #64748b;
+  margin-top: 1rem;
+}
